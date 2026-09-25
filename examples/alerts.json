@@ -1,0 +1,12 @@
+[
+  {
+    "id": 1,
+    "kind": "liquidity_shift",
+    "token": "0x6eabb67a16ae99e08512d22c9244777f186520cb",
+    "wallet": "0xaa96e99ed41b3350ae1616bb7a3b1017e1c7dee9",
+    "chain": "base",
+    "amountUsd": 48000,
+    "detail": "53% of liquidity removed",
+    "createdAt": 1790079852017
+  }
+]

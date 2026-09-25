@@ -1,0 +1,80 @@
+{
+  "token": "0x6eabb67a16ae99e08512d22c9244777f186520cb",
+  "nodes": [
+    {
+      "id": "0x50a1145d3d5f3f936e55fbfeb0700e4db870dd95",
+      "cluster": null,
+      "flagged": false,
+      "x": 11,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "id": "0x9b2af292eabec180a35d8a26e351e2706b18fb25",
+      "cluster": 0,
+      "flagged": true,
+      "x": 6.9,
+      "y": -0.35,
+      "z": 0
+    },
+    {
+      "id": "0x9d0dc65200d3ab634d4fee23188a57a8cf42ab9b",
+      "cluster": 0,
+      "flagged": false,
+      "x": 5.152025790209932,
+      "y": 0,
+      "z": 0.7768138384007524
+    },
+    {
+      "id": "0xaa96e99ed41b3350ae1616bb7a3b1017e1c7dee9",
+      "cluster": 0,
+      "flagged": false,
+      "x": 6.109592813644019,
+      "y": 0.35,
+      "z": -1.2487535858869356
+    }
+  ],
+  "edges": [
+    {
+      "source": "0x9b2af292eabec180a35d8a26e351e2706b18fb25",
+      "target": "0x9d0dc65200d3ab634d4fee23188a57a8cf42ab9b",
+      "weight": 5,
+      "evidence": [
+        "bought within 2 blocks on 5 token(s)"
+      ]
+    },
+    {
+      "source": "0x9b2af292eabec180a35d8a26e351e2706b18fb25",
+      "target": "0xaa96e99ed41b3350ae1616bb7a3b1017e1c7dee9",
+      "weight": 5,
+      "evidence": [
+        "bought within 2 blocks on 5 token(s)"
+      ]
+    },
+    {
+      "source": "0x9d0dc65200d3ab634d4fee23188a57a8cf42ab9b",
+      "target": "0xaa96e99ed41b3350ae1616bb7a3b1017e1c7dee9",
+      "weight": 5,
+      "evidence": [
+        "bought within 2 blocks on 5 token(s)"
+      ]
+    }
+  ],
+  "clusters": [
+    {
+      "id": 0,
+      "size": 3,
+      "members": [
+        "0x9b2af292eabec180a35d8a26e351e2706b18fb25",
+        "0x9d0dc65200d3ab634d4fee23188a57a8cf42ab9b",
+        "0xaa96e99ed41b3350ae1616bb7a3b1017e1c7dee9"
+      ],
+      "flagged": 1
+    }
+  ],
+  "params": {
+    "windowBlocks": 2,
+    "minWeight": 2
+  },
+  "caveat": "Coordinated behaviour is not proof of shared ownership."
+}

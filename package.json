@@ -1,0 +1,64 @@
+{
+  "name": "elephantbrain",
+  "version": "0.4.0",
+  "description": "A terminal for token memory: deployer history, wallet herds, low-frequency alerts, matriarch score. Solana, Base, Robinhood Chain.",
+  "type": "module",
+  "scripts": {
+    "server": "node src/index.js",
+    "client": "cd client && npm run dev",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "scan": "node scripts/scan.js",
+    "monitor": "node scripts/monitor.js",
+    "memory:stats": "node scripts/memory-stats.js",
+    "memory:flag": "node scripts/memory-flag.js",
+    "memory:migrate": "node scripts/memory-migrate.js",
+    "followup": "node scripts/followup.js",
+    "followup:watch": "node scripts/followup.js --watch",
+    "elephant": "node scripts/elephant.js",
+    "demo": "node examples/seed-demo.js",
+    "test": "node --test tests/**/*.test.js",
+    "lint": "eslint src/ scripts/ tests/",
+    "format": "prettier --write \"src/**/*.js\" \"scripts/**/*.js\"",
+    "install:all": "npm install && cd client && npm install",
+    "test:memory": "node --test tests/memory/*.test.js",
+    "test:modules": "node --test tests/modules/*.test.js tests/terminal/*.test.js"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.95.0",
+    "better-sqlite3": "^11.10.0",
+    "dotenv": "^16.6.1",
+    "ethers": "^6.13.0",
+    "express": "^4.21.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.0",
+    "eslint": "^9.0.0",
+    "prettier": "^3.3.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "license": "MIT",
+  "keywords": [
+    "solana",
+    "robinhood-chain",
+    "base",
+    "pump-fun",
+    "pons",
+    "memecoin",
+    "scanner",
+    "sniper",
+    "grok",
+    "elephantbrain",
+    "second-brain",
+    "memory",
+    "elephantbrain",
+    "herd-map",
+    "deployer-memory",
+    "wallet-clustering",
+    "token-memory",
+    "deployer-tracking",
+    "wallet-tracking"
+  ]
+}

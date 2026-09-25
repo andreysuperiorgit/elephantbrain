@@ -1,0 +1,43 @@
+{
+  "wallet": "0xaa96e99ed41b3350ae1616bb7a3b1017e1c7dee9",
+  "score": 26,
+  "band": "CALF",
+  "confidence": "partial",
+  "components": {
+    "age": {
+      "value": 0,
+      "weight": 25,
+      "points": 0
+    },
+    "breadth": {
+      "value": 0.482,
+      "weight": 20,
+      "points": 9.6
+    },
+    "survival": {
+      "value": 0.25,
+      "weight": 35,
+      "points": 8.8
+    },
+    "conduct": {
+      "value": 0.4,
+      "weight": 20,
+      "points": 8
+    }
+  },
+  "counts": {
+    "tokens": 5,
+    "settled": 4,
+    "alive": 1,
+    "dead": 3,
+    "bundleDead": 3
+  },
+  "ageDays": 0,
+  "ageSource": "observed",
+  "reasons": [
+    "0 days in memory",
+    "5 tokens touched",
+    "1 of 4 settled tokens survived",
+    "first-block buyer on 3 token(s) that died"
+  ]
+}
