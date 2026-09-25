@@ -1,0 +1,23 @@
+import {describe, it} from "node:test";
+import assert from "node:assert/strict";
+
+describe("Solana scanner", () => {
+  it("module exports scanSolanaToken function", async () => {
+    const mod = await import("../../src/chains/solana/scanner.js");
+    assert.strictEqual(typeof mod.scanSolanaToken, "function");
+  });
+});
+
+describe("Robinhood scanner", () => {
+  it("module exports scanRobinhoodToken function", async () => {
+    const mod = await import("../../src/chains/robinhood/scanner.js");
+    assert.strictEqual(typeof mod.scanRobinhoodToken, "function");
+  });
+});
+
+describe("Base scanner", () => {
+  it("module exports scanBaseToken function", async () => {
+    const mod = await import("../../src/chains/base/scanner.js");
+    assert.strictEqual(typeof mod.scanBaseToken, "function");
+  });
+});

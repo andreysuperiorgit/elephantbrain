@@ -1,0 +1,25 @@
+/**
+ * ELEPHANTBRAIN Memory — the second brain.
+ *
+ * Public API:
+ *   import { enrichScan, recordToken } from "./memory/index.js";
+ *
+ *   // After running the 6 checks:
+ *   const memory = enrichScan(scanResult);
+ *   const finalScore = scanResult.baseScore + memory.adjustment;
+ *   recordToken({ address, chain, deployer, score: finalScore, verdict });
+ *
+ * Environment:
+ *   EB_MEMORY_PATH — override SQLite file location (default: data/memory.db)
+ */
+
+export { initMemory, closeMemory, getDb, memoryPath } from "./db.js";
+export { enrichScan, lookupDeployer, lookupWallets } from "./lookup.js";
+export {
+  recordToken,
+  recordVerdict,
+  recordBundle,
+  updateTokenStatus,
+  flagWallet,
+  getStats,
+} from "./record.js";
